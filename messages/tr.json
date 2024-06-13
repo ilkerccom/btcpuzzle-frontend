@@ -5,7 +5,7 @@
     "private-keys": "Anahtarlar",
     "keys": "Anahtarlar",
     "cloud-search": "Cloud Search",
-    "gpus": "GPUlar",
+    "gpus": "GPU Karşılaştırma",
     "tools": "Araçlar",
     "faq": "SSS",
     "worker-dashboard": "İşçilerim",
@@ -254,7 +254,10 @@
     "api-document": "API dökümantasyonu",
     "api-document-for-pool": "Havuz için API dökümantasyonu. Kendi istemcinizi oluşturun.",
     "telegram-group-desc": "Destek, sohbet ve daha fazlası için.",
-    "telegram-group": "Telegram grubu"
+    "telegram-group": "Telegram grubu",
+    "general": {
+      "other": "Diğer"
+    }
   },
   "tools": {
     "title": "Kripto Araçları",

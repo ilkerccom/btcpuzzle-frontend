@@ -5,7 +5,7 @@
     "private-keys": "Private Keys",
     "keys": "Keys",
     "cloud-search": "Cloud Search",
-    "gpus": "GPUs",
+    "gpus": "GPU Benchmark",
     "tools": "Tools",
     "faq": "FAQ",
     "worker-dashboard": "Worker Dashboard",
@@ -254,7 +254,10 @@
     "api-document": "API documentation",
     "api-document-for-pool": "API documentation for pool.",
     "telegram-group-desc": "For support, chat and more.",
-    "telegram-group": "Telegram group"
+    "telegram-group": "Telegram group",
+    "general": {
+      "other": "Other"
+    }
   },
   "tools": {
     "title": "Crypto Tools",
@@ -911,7 +914,7 @@
     "question19": "Can the prize be found outside the pool?",
     "answer19": "<p> Certainly. Apart from this pool, there are also many people and pools scanning puzzles. The advantage of pools is that many people share the workforce, making the scanning process faster. </p>",
     "question20": "How can I transfer the reward to another BTC address?",
-    "answer20": "<p> If you found the private key of any puzzle, you are entitled to receive the reward. What is explained here is for general information purposes and it is the user's own responsibility to transfer the reward to another address. </p> <p> The easiest way to transfer the reward to another address is to scan the relevant private key using a mobile wallet. Most wallets do not support importing HEX-based private keys. Therefore, first of all, you need to convert the HEX private key you have obtained into the “WIF” format, which is an importable format, and scan the obtained private key with any wallet (Exodus, etc.) and transfer the entire balance to your wallet. You can make conversions using our <link> HEX to WIF tool </link> offline.",
+    "answer20": "<p> If you found the private key of any puzzle, you are entitled to receive the reward. What is explained here is for general information purposes and it is the user's own responsibility to transfer the reward to another address. </p> <p> The easiest way to transfer the reward to another address is to scan the relevant private key using a mobile wallet. Most wallets do not support importing HEX-based private keys. Therefore, first of all, you need to convert the HEX private key you have obtained into the “WIF” format, which is an importable format, and scan the obtained private key with any wallet (Exodus, etc.) and transfer the entire balance to your wallet. You can make conversions using our <link> HEX to WIF tool </link> offline.</p>",
     "question21": "What should I pay attention to when transferring the reward?",
     "answer21": "<p> There is a topic that is the subject of much debate in low numbered puzzles. Puzzles with low numbers (approximately 80 and below) with known Public Keys can be easily found using methods such as \"kangaroo/bsgs\". This brought to the fore the issue of caution when transferring the rewards of low-numbered puzzles to another BTC wallet address. It is frequently heard that bots have been created specifically for this issue and that they are waiting for the relevant puzzles (most often 66, 67 and others) to make a transfer. </p> <p> Once Puzzle 66 is found and the prize is transferred to another address, the bots come into play and capture the relevant transfer transaction. Since the \"public key\" of the relevant puzzle will be revealed in this transfer process, can one quickly find the private key of the relevant puzzle with the previously mentioned methods (probably less than 1 minute) and manipulate the transaction? Of course, there are risks, but it is up to you to minimize them. </p> <p> Suppose you find a reward and you are going to transfer it to your own Bitcoin wallet address. There are some important criteria you need to pay attention to. </p> <p> <b>1 - Make sure RBF is turned off in the wallet you use.</b> RBF (Replace by Fee) is a nice feature that allows us to change the “fee” value of the relevant transfer transaction later and start a new transaction. However, this may pose a risk in puzzles with low numbers. Assuming RBF is turned on when you transfer a puzzle prize to another address, someone who knows the private key can manipulate the transaction for a higher fee. Therefore, it is recommended that you initiate a transfer transaction in a wallet where RBF is turned off. (Exodus supports private key import with RBF disabled by default, as of April 21, 2024.) </p> <p> <b>2 - Avoid network congestion.</b> Initiating a transfer during a period when the Bitcoin network is slower than normal may increase risks. Therefore, it would be better to perform the transfer when the network is operating normally. This means that the transfer transaction can easily be included in a block and can protect you from any risks. </p> <p> <b>3 - Wait for a moment when transfer fees are low.</b> A similar risk reduction method as the previous item. Once Bitcoin transfer fees are standard, you can reduce the risks when the transfer process is initiated. </p> <p> <b>4 - Trust your feelings.</b> Start the transfer process when you feel the next block being mined. This means that the transaction will be included in the next block immediately and you can minimize risks as much as possible. </p> <p> Of course, there are some risks, but the probability of this possibility coming true is higher if you do not take the above into consideration. </p>",
     "question22": "What is the “challenge” feature on the site?",
