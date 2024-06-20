@@ -256,8 +256,17 @@
     "telegram-group-desc": "Destek, sohbet ve daha fazlası için.",
     "telegram-group": "Telegram grubu",
     "general": {
-      "other": "Diğer"
-    }
+      "other": "Diğer",
+      "realtime-status": "Havuz Durumu",
+      "workers": "İşçiler"
+    },
+    "ok": "Tamam",
+    "accept-cookie-text": "Bu web sitesi, kullanıcı deneyimini iyileştirmek için çerezler kullanmaktadır. Web sitemizi kullanarak tüm çerezleri kabul etmiş olursunuz.",
+    "back": "Geri",
+    "backup-failed": "Yedekleme sırasında bir sorun oluştu. \nKelimeleri doğru sırayla seçtiğinizden emin olun.",
+    "backup-now": "Şimdi yedekle",
+    "forgot-password": "Parolanızı mı unuttunuz?",
+    "select-word": "Kelime seç"
   },
   "tools": {
     "title": "Kripto Araçları",
@@ -385,7 +394,11 @@
     "register-password-length-error": "Şifre en az {min} karakterden oluşmalıdır.",
     "register-password-unmatch-error": "Girdiğiniz şifreler uyuşmuyor.",
     "registarion-failed": "Kayıt başarısız. Girilen cüzdan adresi geçersiz veya başkası tarafından kullanılıyor olabilir.",
-    "register-success": "Hoş geldiniz, {username} kaydınız başarıyla gerçekleştirildi."
+    "register-success": "Hoş geldiniz, {username} kaydınız başarıyla gerçekleştirildi.",
+    "account-recovery": "Hesap Kurtarma",
+    "invalid-recovery-phrase": "Geçersiz kurtarma ifadesi girildi.",
+    "recover-my-account": "Hesabımı Kurtar",
+    "recovery-phrase": "Kurtarma İfadesi"
   },
   "gpus": {
     "title": "Bitcoin Puzzle için GPU Kıyaslama",
@@ -754,7 +767,7 @@
     "top-10-desc": "Bu tablo son 24 saatte en çok katkıda bulunan kullanıcıları gösterir.",
     "shows-data-last-hour": "Son 1 saat içindeki verileri gösterir.",
     "last-update": "Son güncelleme",
-    "data-updated-every-x": "Veriler her 5 dakikada bir güncellenir.",
+    "data-updated-every-x": "Veriler her {x} dakikada bir güncellenir.",
     "defeated-footer-desc": "Not: <b>2000000-2050000</b> (İlk ~%0.98) ve <b>3FAF000-3FFFFFF</b> (Son ~%0.98) aralıkları Puzzle {puzzle} havuzunda manuel olarak atlanmıştır.",
     "deleted": "\"{template}\" isimli şablon silindi.",
     "saved": "Şablon başarıyla kaydedildi.",
@@ -848,7 +861,9 @@
     "eligable-status-description": "<li> Zaten ücretsiz kullanıyorsanız, yukarıdaki koşulları karşıladığınız sürece her zaman ücretsiz kullanmaya devam edersiniz. </li> <li> Her iki koşulu da karşılamıyorsanız, <u>giriş ücreti ödemeniz gerekir</u>. </li> <li> Giriş ücretini ödedikten sonra, <u> yukarıdaki koşullardan birini yerine getirmek için {day} gününüz var </u> . Koşullardan herhangi birini karşıladığınız sürece her zaman ücretsiz kullanmaya devam edeceksiniz. </li> <li> Ömür boyu ücretsiz kalabilmek için <u>koşullardan birini karşılamanız</u> yeterlidir. </li> <li> <u> Havuzdaki genel tarama yüzdesi arttıkça giriş ücreti de artacaktır. </u> </li> <li> Ödeyeceğiniz tutar yalnızca Puzzle {puzzle} havuzu için geçerlidir. </li>",
     "pay-entrance-fee": "GİRİŞ ÜCRETİNİ ÖDE",
     "group-workers": "İşçileri Grupla",
-    "no-active-workers": "Aktif işçi yok"
+    "no-active-workers": "Aktif işçi yok",
+    "wallet-address-for-app": "Uygulama için cüzdan adresi değeri.",
+    "backup-success": "Hesap başarıyla yedeklendi."
   },
   "tooltip": {
     "user-token": "Kullanıcı jetonunu yenilediğinizde, mevcut işçileriniz varsa çevrimdışı olacaktır. Yeni jeton değerini her işçinin \"settings.txt\" dosyasından güncellemeniz gerekir.",
@@ -870,7 +885,8 @@
     "telegram-share": "Bütün bildirimleri Telegram ile alın. <br/><br/> true: Telegram'a bildirim göndermeyi etkinleştir.<br/><br/> false: Bildirim göndermez. <br/><br/> Özel anahtar bulunduğunda Telegram'a bildirim gönderir. 'telegram_share_eachkey'i 'true' olarak ayarlarsanız, her aralık  tarandığında bildirim gönderecektir. Telegram ayarlarınız doğru ise işçi çalışmaya başladığına dair bildirim alacaksınız. Öneri: Güvenilmeyen bir bilgisayardaysanız ayarları konsol üzerinden yapın ve kaydetmeden devam edin.<br/><br/> ÖNEMLİ: Anahtar bulunursa ve Telegram anahtarı size iletemezse sınırsız deneme yapacaktır .<br/><br/>",
     "telegram-acces-token": "Telegram BOT access token değerini girin. Örnek: 6331494066:ABEfv4cF3dbc3mA8qGLDlEp2uxzgYESIa_w<br/><br/>",
     "telegram-chat-id": "Telegram chat id değerini girin. Örnek: -9334716240<br/><br/>",
-    "telegram-share-each-key": "true (Evet): Taranan her anahtarda bildirim gönder.<br/><br/> false (Hayır): Yalnızca hedef özel anahtar bulunduğunda bildirim gönderir.<br/><br/>"
+    "telegram-share-each-key": "true (Evet): Taranan her anahtarda bildirim gönder.<br/><br/> false (Hayır): Yalnızca hedef özel anahtar bulunduğunda bildirim gönderir.<br/><br/>",
+    "wallet-address": "Bu değeri değiştiremezseniz. İşçinizin cüzdan adresidir. \"settings.txt\" dosyasında ilgili alana girilmelidir."
   },
   "faq": {
     "meta-desc": "BTC Puzzle, Bitcrackrandomiser ve CloudSearch hakkında en sık sorulan soruların yanıtları.",
@@ -967,5 +983,10 @@
     "answer45": "<p> Cloud Search'ü kullanmaya karar verdiyseniz yapmanız gereken ilk şey güvenilir bir şablon oluşturmaktır. Varsayılan ayarlarla tarama yapmak çalışan sunucudaki anahtarı ortaya çıkaracağından bir paylaşım mekanizması kurmanız gerekir. </p> <p> Şablonunuzda her zaman “untrusted_computer” değerini “true” olarak kullanın. Bu, bulunan anahtarın uygulama konsolunda, günlüklerde ve anahtar bulunduğunda çalışan sunucunun herhangi bir yerinde saklanmasını önleyecektir. Anahtar yalnızca sizin belirttiğiniz şekilde size gelecektir. API paylaşımı veya Telegram paylaşımı özelliğinin kullanılması zorunludur. </p> <p> İlgili şablonu oluşturduktan sonra şablonun ne kadar güvenilir olduğu size uyarı olarak gösterilecektir. </p>",
     "question46": "Kendi Docker imajımı kullanabilir miyim?",
     "answer46": "<p> Cloud Search'te varsayılan olarak yalnızca \"orijinal docker imajı\" kullanılır. Ancak kendi docker imajınızı kullanabilmeniz için bunu yakında güncelleyeceğiz. </p>"
+  },
+  "backup": {
+    "desc": "Kurtarma ifadesini kullanarak hesabınızı yedekleyin. \nŞifre kurtarma ve sıfırlama hizmetleri sunmuyoruz.",
+    "success": "Kurtarma ifadesi ayarlandı.",
+    "title": "Kurtarma İfadesi"
   }
 }

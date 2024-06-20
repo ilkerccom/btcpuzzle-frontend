@@ -256,8 +256,17 @@
     "telegram-group-desc": "Para soporte, chat y más.",
     "telegram-group": "Grupo de Telegram",
     "general": {
-      "other": "Otro"
-    }
+      "other": "Otro",
+      "realtime-status": "Estado Real",
+      "workers": "Trabajadores"
+    },
+    "ok": "OK",
+    "accept-cookie-text": "Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al utilizar nuestro sitio web, usted acepta todas las cookies.",
+    "back": "Atrás",
+    "backup-failed": "Hubo un problema durante la copia de seguridad. \nAsegúrate de elegir las palabras en el orden correcto.",
+    "backup-now": "Copia ahora",
+    "forgot-password": "¿Has olvidado tu contraseña?",
+    "select-word": "Seleccionar palabra"
   },
   "tools": {
     "title": "Herramientas Cripto",
@@ -385,7 +394,11 @@
     "register-password-length-error": "La contraseña debe tener al menos {min} caracteres.",
     "register-password-unmatch-error": "Las contraseñas no coinciden.",
     "registarion-failed": "Registro fallido. La dirección de la cartera ingresada puede ser inválida o ya estar en uso.",
-    "register-success": "Bienvenido, {username}, su registro fue exitoso."
+    "register-success": "Bienvenido, {username}, su registro fue exitoso.",
+    "account-recovery": "Recuperación de Cuenta",
+    "invalid-recovery-phrase": "Se ingresó una frase de recuperación no válida.",
+    "recover-my-account": "Recuperar mi cuenta",
+    "recovery-phrase": "Frase de recuperación"
   },
   "gpus": {
     "title": "Comparación de GPUs para Bitcoin Puzzle",
@@ -754,7 +767,7 @@
     "top-10-desc": "Esta tabla muestra los 10 usuarios principales con más contribuciones en las últimas 24 horas.",
     "shows-data-last-hour": "Muestra datos de la última hora.",
     "last-update": "Última actualización",
-    "data-updated-every-x": "Datos actualizados cada 5 minutos.",
+    "data-updated-every-x": "Datos actualizados cada {x} minutos.",
     "defeated-footer-desc": "Nota: Los rangos <b>2000000-2050000</b> (~%0.98 inicial) y <b>3FAF000-3FFFFFF</b> (~%0.98 final) han sido omitidos manualmente en el pool del Puzzle {puzzle}.",
     "deleted": "El template llamado \"{template}\" ha sido eliminado.",
     "saved": "Template guardado exitosamente.",
@@ -848,7 +861,9 @@
     "eligable-status-description": "<li>Si ya usa de forma gratuita, siempre continuará usándolo gratis siempre que cumpla con las condiciones anteriores.</li> <li>Si no cumple con ambas condiciones, <u>debe pagar la tarifa de entrada</u>.</li> <li>Después de pagar la tarifa de entrada, <u>tiene {day} días para cumplir con una de las condiciones anteriores</u>. Siempre continuará usándolo gratis mientras cumpla con alguna de las condiciones.</li> <li>Para mantenerse gratis de por vida, <u>solo necesita cumplir con una de las condiciones</u>.</li> <li><u>La tarifa de entrada aumentará a medida que aumente el porcentaje de escaneo general en el pool.</u></li> <li>La cantidad que pague solo se aplica al pool del Puzzle {puzzle}.</li>",
     "pay-entrance-fee": "PAGAR TARIFA DE ENTRADA",
     "group-workers": "Agrupar Trabajadores",
-    "no-active-workers": "No hay trabajadores activos"
+    "no-active-workers": "No hay trabajadores activos",
+    "wallet-address-for-app": "Valor de la dirección de billetera para la aplicación.",
+    "backup-success": "La cuenta ha sido respaldada exitosamente."
   },
   "tooltip": {
     "user-token": "Cuando renueve el token de usuario, cualquier trabajador existente estará fuera de línea. Debe actualizar el valor del token en el archivo \"settings.txt\" de cada trabajador.",
@@ -870,7 +885,8 @@
     "telegram-share": "Reciba todas las notificaciones a través de Telegram.<br/><br/> true: Habilita el envío de notificaciones a Telegram.<br/><br/> false: No envía notificaciones.<br/><br/> Envía una notificación a Telegram cuando se encuentra una clave privada. Si establece 'telegram_share_eachkey' en 'true', enviará una notificación por cada rango escaneado. Si sus configuraciones de Telegram son correctas, recibirá una notificación cuando el trabajador comience a trabajar. Sugerencia: Si está en una computadora no confiable, configure los ajustes a través de la consola y continúe sin guardarlos.<br/><br/> IMPORTANTE: Si se encuentra una clave y Telegram no puede enviarle la clave, intentará indefinidamente.<br/><br/>",
     "telegram-acces-token": "Ingrese el valor del token de acceso de Telegram BOT. Ejemplo: 6331494066:ABEfv4cF3dbc3mA8qGLDlEp2uxzgYESIa_w<br/><br/>",
     "telegram-chat-id": "Ingrese el valor del id del chat de Telegram. Ejemplo: -9334716240<br/><br/>",
-    "telegram-share-each-key": "true (Sí): Enviar notificación por cada clave escaneada.<br/><br/> false (No): Enviar notificación solo cuando se encuentre la clave privada objetivo.<br/><br/>"
+    "telegram-share-each-key": "true (Sí): Enviar notificación por cada clave escaneada.<br/><br/> false (No): Enviar notificación solo cuando se encuentre la clave privada objetivo.<br/><br/>",
+    "wallet-address": "No se puede cambiar este valor. Es la dirección de la billetera de su trabajador. Debe ingresarse en el campo correspondiente en el archivo \"settings.txt\"."
   },
   "faq": {
     "meta-desc": "Respuestas a las preguntas más frecuentes sobre BTC Puzzle, Bitcrackrandomiser y CloudSearch.",
@@ -967,5 +983,10 @@
     "answer45": "<p> Si decides usar Cloud Search, lo primero que debes hacer es crear una plantilla confiable. Escanear con la configuración predeterminada revelará la clave en el servidor en ejecución, por lo que debes establecer un mecanismo de compartición. </p> <p> En tu plantilla, siempre usa el valor 'untrusted_computer' como 'true'. Esto evitará que la clave encontrada se almacene en la consola de la aplicación, los registros o en cualquier lugar del servidor en ejecución. La clave solo te llegará de la forma que especifiques. Es obligatorio usar la función de compartición por API o Telegram. </p> <p> Después de crear la plantilla correspondiente, se te mostrará una advertencia sobre cuán confiable es la plantilla. </p>",
     "question46": "¿Puedo usar mi propia imagen Docker?",
     "answer46": "<p> Cloud Search solo usa 'la imagen Docker original' de manera predeterminada. Sin embargo, pronto actualizaremos para permitirte usar tu propia imagen Docker. </p>"
+  },
+  "backup": {
+    "desc": "Haga una copia de seguridad de su cuenta usando una frase de recuperación. \nNo ofrecemos servicios de recuperación y restablecimiento de contraseña.",
+    "success": "Se ha establecido la frase de recuperación.",
+    "title": "Frase de recuperación"
   }
 }

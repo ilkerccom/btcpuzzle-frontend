@@ -8,7 +8,7 @@
     "gpus": "GPU Benchmark",
     "tools": "Tools",
     "faq": "FAQ",
-    "worker-dashboard": "Worker Dashboard",
+    "worker-dashboard": "My Workers",
     "my-instances": "My Instances",
     "cloud-dashboard": "Cloud Dashboard",
     "search-instances": "Search Instances",
@@ -256,8 +256,17 @@
     "telegram-group-desc": "For support, chat and more.",
     "telegram-group": "Telegram group",
     "general": {
-      "other": "Other"
-    }
+      "other": "Other",
+      "realtime-status": "Realtime Status",
+      "workers": "Workers"
+    },
+    "ok": "OK",
+    "accept-cookie-text": "This website uses cookies to improve user experience. By using our website you consent to all cookies.",
+    "select-word": "Select word",
+    "backup-now": "Backup Now",
+    "back": "Back",
+    "backup-failed": "There was a problem during backup. Make sure you choose the words in the correct order.",
+    "forgot-password": "Forgot password?"
   },
   "tools": {
     "title": "Crypto Tools",
@@ -385,7 +394,11 @@
     "register-password-length-error": "Password must be at least {min} characters.",
     "register-password-unmatch-error": "Passwords entered do not match.",
     "registarion-failed": "Registration failed. The wallet address may be in use by someone else or it's invalid.",
-    "register-success": "Welcome, {username} registration successful."
+    "register-success": "Welcome, {username} registration successful.",
+    "account-recovery": "Account Recovery",
+    "recover-my-account": "Recover My Account",
+    "recovery-phrase": "Recovery Phrase",
+    "invalid-recovery-phrase": "Invalid recovery phrase entered."
   },
   "gpus": {
     "title": "GPU Benchmark List",
@@ -754,7 +767,7 @@
     "top-10-desc": "This table shows the users who contributed the most in the last 24 hours.",
     "shows-data-last-hour": "Shows data within the last 1 hour.",
     "last-update": "Last update",
-    "data-updated-every-x": "Data is updated every 5 minutes.",
+    "data-updated-every-x": "Data is updated every {x} minutes.",
     "defeated-footer-desc": "Note: <b>2000000-2050000</b> (First ~%0.98) ranges and <b>3FAF000-3FFFFFF</b> (Last ~%0.98) manually defeated in Puzzle {puzzle} pool.",
     "deleted": "Template \"{template}\" deleted.",
     "saved": "Template saved successfully.",
@@ -848,7 +861,9 @@
     "eligable-status-description": "<li> If you are already using it for free, you will always use it for free as long as you meet the above conditions. </li> <li> If you do not meet both conditions, <u>you must one-time pay an entrance fee</u>. </li> <li> After paying the entrance fee, <u> you have {day} days to meet one of the above conditions </u> . You will always use it for free as long as you meet any of the conditions. </li> <li> You only need to <u>meet one of the condition</u> to stay free for lifetime. </li> <li> <u> Entry fee will increase as the percentage of overall crawls in the pool increases. </u> </li> <li> The amount you will pay is only valid for the Puzzle {puzzle} pool. </li>",
     "pay-entrance-fee": "PAY ENTRANCE FEE",
     "group-workers": "Group Workers",
-    "no-active-workers": "No active workers"
+    "no-active-workers": "No active workers",
+    "wallet-address-for-app": "Wallet address value for app.",
+    "backup-success": "The account has been successfully backed up."
   },
   "tooltip": {
     "user-token": "If you revoke token, it will be offline if you have existing workers. You need to update the new token value from each worker's settings file.",
@@ -870,7 +885,8 @@
     "telegram-share": "Share progress to Telegram <br/><br/> true: Share progress to Telegram.<br/><br/> false: If false, it does not send notification. <br/><br/> It sends a notification to Telegram when the private key is found. If you set 'telegram_share_eachkey' to 'true', it will send notification every time the scan is finished. If your Telegram settings are correct, you will receive a notification that the worker has started working. Suggestion: If you are on an untrusted computer, make the settings via the console and proceed without saving.<br/><br/> IMPORTANT: If the key is found and Telegram cannot transmit the key to you, it will make unlimited attempts.<br/><br/>",
     "telegram-acces-token": "Enter Telegram BOT access token. Example: 6331494066:ABEfv4cF3dbc3mA8qGLDlEp2uxzgYESIa_w<br/><br/>",
     "telegram-chat-id": "Enter Telegram chat id. Example: -9334716240<br/><br/>",
-    "telegram-share-each-key": "true (Yes): Send notification each key scanned.<br/><br/> false (No): It only sends a notification when the private key is found.<br/><br/>"
+    "telegram-share-each-key": "true (Yes): Send notification each key scanned.<br/><br/> false (No): It only sends a notification when the private key is found.<br/><br/>",
+    "wallet-address": "You cannot change this value. It is your worker's wallet address. It must be entered in the relevant field in the \"settings.txt\" file."
   },
   "faq": {
     "meta-desc": "Answers to the most frequently asked questions about BTC Puzzle, Bitcrackrandomiser and CloudSearch.",
@@ -967,5 +983,10 @@
     "answer45": "<p> If you've decided to use Cloud Search, the first thing you need to do is create a reliable template. Since scanning with default settings will reveal the key on the running instance, you need to set up a sharing mechanism. </p> <p> Always use “Untrusted computer” as “Yes” in your template. This will prevent the found key from being stored in the application console, logs and anywhere in the running instance when the key is found. The key will only come to you as you specify. It is mandatory to use the API share or Telegram share feature. </p> <p> After creating the relevant template, you will be shown as a warning how reliable the template is. </p>",
     "question46": "Can I use my own docker image?",
     "answer46": "<p> By default, only the “original docker image” is used in Cloud Search. However, we will update this soon so that you can use your own docker image. </p>"
+  },
+  "backup": {
+    "desc": "Back up your account using recovery phrase. We do not offer password recovery and reset services.",
+    "title": "Recovery Phrase",
+    "success": "Recovery phrase has been set."
   }
 }

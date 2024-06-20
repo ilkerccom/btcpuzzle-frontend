@@ -8,7 +8,7 @@
     "gpus": "GPU 基准测试",
     "tools": "工具",
     "faq": "常见问题解答",
-    "worker-dashboard": "工人仪表盘",
+    "worker-dashboard": "我的工人",
     "my-instances": "我的实例",
     "cloud-dashboard": "云仪表盘",
     "search-instances": "搜索实例",
@@ -256,8 +256,17 @@
     "telegram-group-desc": "用于支持、聊天等。",
     "telegram-group": "Telegram 群组",
     "general": {
-      "other": "其他"
-    }
+      "other": "其他",
+      "realtime-status": "实时状态",
+      "workers": "工人"
+    },
+    "ok": "好的",
+    "accept-cookie-text": "本网站使用Cookie来改善用户体验。通过使用我们的网站，您同意所有Cookie。",
+    "back": "后退",
+    "backup-failed": "备份过程中出现问题。请确保按正确的顺序选择单词。",
+    "backup-now": "立即备份",
+    "forgot-password": "忘记密码？",
+    "select-word": "选择单词"
   },
   "tools": {
     "title": "加密工具",
@@ -385,7 +394,11 @@
     "register-password-length-error": "密码必须至少包含 {min} 个字符。",
     "register-password-unmatch-error": "输入的密码不匹配。",
     "registarion-failed": "注册失败。 输入的钱包地址无效或已被其他人使用。",
-    "register-success": "欢迎，{username} 注册成功。"
+    "register-success": "欢迎，{username} 注册成功。",
+    "account-recovery": "帐户恢复",
+    "invalid-recovery-phrase": "输入的恢复短语无效。",
+    "recover-my-account": "恢复我的帐户",
+    "recovery-phrase": "恢复短语"
   },
   "gpus": {
     "title": "比特币拼图的 GPU 基准",
@@ -754,7 +767,7 @@
     "top-10-desc": "此表显示过去 24 小时内贡献最大的用户。",
     "shows-data-last-hour": "显示过去一小时的数据。",
     "last-update": "最后更新",
-    "data-updated-every-x": "数据每 5 分钟更新一次。",
+    "data-updated-every-x": "数据每 {x} 分钟更新一次。",
     "defeated-footer-desc": "注：Puzzle {puzzle} 矿池中，<b>2000000-2050000</b>（前 ~0.98%）和 <b>3FAF000-3FFFFFF</b>（后 ~0.98%）范围已手动跳过。",
     "deleted": "模板 \"{template}\" 已删除。",
     "saved": "模板已成功保存。",
@@ -848,7 +861,9 @@
     "eligable-status-description": "<li> 如果您已经免费使用，只要满足上述条件，您将永远免费使用。 </li> <li> 如果您不满足两个条件中的任何一个，<u>您需要支付入场费</u>。 </li> <li> 支付入场费后，<u>您有 {day} 天的时间满足上述条件之一</u>。只要您满足任何一个条件，您将永远免费使用。 </li> <li> 为了终生免费使用，<u>您只需满足一个条件</u>。 </li> <li> <u> 随着矿池的总体扫描百分比增加，入场费也会增加。 </u> </li> <li> 您支付的金额仅适用于 Puzzle {puzzle} 矿池。 </li>",
     "pay-entrance-fee": "支付入场费",
     "group-workers": "分组工人",
-    "no-active-workers": "无活跃工人"
+    "no-active-workers": "无活跃工人",
+    "wallet-address-for-app": "应用程序的钱包地址值。",
+    "backup-success": "帐号已成功备份。"
   },
   "tooltip": {
     "user-token": "更新用户令牌时，如果现有的工作人员在线，他们将会下线。需要在每个工作人员的 \"settings.txt\" 文件中更新新的令牌值。",
@@ -870,7 +885,8 @@
     "telegram-share": "通过 Telegram 接收所有通知。<br/><br/> true：启用 Telegram 通知。<br/><br/> false：不发送通知。<br/><br/>找到私钥时，将发送 Telegram 通知。如果将 'telegram_share_eachkey' 设置为 'true'，则每扫描一个范围都会发送通知。如果您的 Telegram 设置正确，工作人员开始工作时您会收到通知。建议：如果您在不受信任的计算机上，请通过控制台进行设置并继续而不保存。<br/><br/>重要提示：如果找到密钥并且 Telegram 无法将其传送给您，它将无限次重试。<br/><br/>",
     "telegram-acces-token": "输入 Telegram BOT 访问令牌值。例如：6331494066:ABEfv4cF3dbc3mA8qGLDlEp2uxzgYESIa_w<br/><br/>",
     "telegram-chat-id": "输入 Telegram 聊天 ID 值。例如：-9334716240<br/><br/>",
-    "telegram-share-each-key": "true (是)：每个扫描的密钥发送通知。<br/><br/> false (否)：仅在找到目标私钥时发送通知。<br/><br/>"
+    "telegram-share-each-key": "true (是)：每个扫描的密钥发送通知。<br/><br/> false (否)：仅在找到目标私钥时发送通知。<br/><br/>",
+    "wallet-address": "您无法更改该值。这是您工作人员的钱包地址。必须将其输入到“settings.txt”文件的相关字段中。"
   },
   "faq": {
     "meta-desc": "关于BTC Puzzle, Bitcrackrandomiser 和 CloudSearch 的常见问题解答。",
@@ -967,5 +983,10 @@
     "answer45": "<p>决定使用 Cloud Search 后，首先要做的是创建一个可靠的模板。使用默认设置进行扫描会暴露服务器上的密钥，因此需要建立一个共享机制。</p> <p>在模板中始终将“untrusted_computer”值设置为“true”。这样可以防止找到的密钥在应用程序控制台、日志或找到密钥时的任何地方保存。密钥只会按您指定的方式发送给您。必须使用 API 分享或 Telegram 分享功能。</p> <p>创建相关模板后，系统会向您显示模板的安全性提示。</p>",
     "question46": "我可以使用自己的 Docker 镜像吗？",
     "answer46": "<p>Cloud Search 默认仅使用“原始 docker 镜像”。不过，我们将很快更新以支持使用您自己的 docker 镜像。</p>"
+  },
+  "backup": {
+    "desc": "使用恢复短语备份您的帐户。我们不提供密码恢复和重置服务。",
+    "success": "恢复短语已设置。",
+    "title": "恢复短语"
   }
 }

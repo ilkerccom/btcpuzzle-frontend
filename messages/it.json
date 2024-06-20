@@ -8,7 +8,7 @@
     "gpus": "Benchmark della GPU",
     "tools": "Strumenti",
     "faq": "FAQ",
-    "worker-dashboard": "Dashboard lavoratori",
+    "worker-dashboard": "Miei Operai",
     "my-instances": "I miei server",
     "cloud-dashboard": "Pannello Cloud",
     "search-instances": "Cerca server",
@@ -256,8 +256,17 @@
     "telegram-group-desc": "Per supporto, chat e altro.",
     "telegram-group": "Gruppo Telegram",
     "general": {
-      "other": "Altro"
-    }
+      "other": "Altro",
+      "realtime-status": "Stato Reale",
+      "workers": "Lavoratori"
+    },
+    "ok": "OK",
+    "accept-cookie-text": "Questo sito web utilizza i cookie per migliorare l'esperienza dell'utente. Utilizzando il nostro sito web, acconsenti a tutti i cookie.",
+    "back": "Indietro",
+    "backup-failed": "Si è verificato un problema durante il backup. \nAssicurati di scegliere le parole nell'ordine corretto.",
+    "backup-now": "Esegui il backup ora",
+    "forgot-password": "Ha dimenticato la password?",
+    "select-word": "Seleziona la parola"
   },
   "tools": {
     "title": "Strumenti di Cripto",
@@ -385,7 +394,11 @@
     "register-password-length-error": "La password deve essere composta da almeno {min} caratteri.",
     "register-password-unmatch-error": "Le password inserite non corrispondono.",
     "registarion-failed": "Registrazione fallita. L'indirizzo del portafoglio inserito potrebbe essere non valido o già in uso.",
-    "register-success": "Benvenuto, {username}, la tua registrazione è stata completata con successo."
+    "register-success": "Benvenuto, {username}, la tua registrazione è stata completata con successo.",
+    "account-recovery": "Recupero dell'account",
+    "invalid-recovery-phrase": "È stata inserita una frase di recupero non valida.",
+    "recover-my-account": "Recupera il mio account",
+    "recovery-phrase": "Frase di recupero"
   },
   "gpus": {
     "title": "Benchmark delle GPU per Bitcoin Puzzle",
@@ -754,7 +767,7 @@
     "top-10-desc": "Questa tabella mostra gli utenti che hanno contribuito di più nelle ultime 24 ore.",
     "shows-data-last-hour": "Mostra i dati dell'ultima ora.",
     "last-update": "Ultimo aggiornamento",
-    "data-updated-every-x": "I dati vengono aggiornati ogni 5 minuti.",
+    "data-updated-every-x": "I dati vengono aggiornati ogni {x} minuti.",
     "defeated-footer-desc": "Nota: Gli intervalli <b>2000000-2050000</b> (Primi ~%0.98) e <b>3FAF000-3FFFFFF</b> (Ultimi ~%0.98) sono stati manualmente saltati nella pool Puzzle {puzzle}.",
     "deleted": "Il template \"{template}\" è stato eliminato.",
     "saved": "Template salvato con successo.",
@@ -848,7 +861,9 @@
     "eligable-status-description": "<li> Se usi già gratuitamente, continuerai a usarlo gratuitamente fintanto che soddisfi le condizioni sopra. </li> <li> Se non soddisfi nessuna delle due condizioni, <u>devi pagare una tassa di ingresso</u>. </li> <li> Dopo aver pagato la tassa di ingresso, hai <u>{day} giorni</u> per soddisfare uno dei requisiti sopra. Finché soddisfi uno dei requisiti, continuerai a usarlo gratuitamente per sempre. </li> <li> Per continuare a usarlo gratuitamente a vita, devi soddisfare <u>almeno una delle condizioni</u>. </li> <li> <u>La tassa di ingresso aumenterà man mano che la percentuale di scansione generale nella pool aumenta.</u> </li> <li> L'importo che paghi si applica solo alla pool del Puzzle {puzzle}. </li>",
     "pay-entrance-fee": "PAGA LA TASSA DI INGRESSO",
     "group-workers": "Raggruppa Lavoratori",
-    "no-active-workers": "Nessun lavoratore attivo"
+    "no-active-workers": "Nessun lavoratore attivo",
+    "wallet-address-for-app": "Valore dell'indirizzo del portafoglio per l'app.",
+    "backup-success": "Il backup dell'account è stato eseguito correttamente."
   },
   "tooltip": {
     "user-token": "Quando rinnovi il token utente, i tuoi lavoratori attuali andranno offline. Devi aggiornare il valore del nuovo token nel file 'settings.txt' di ogni lavoratore.",
@@ -870,7 +885,8 @@
     "telegram-share": "Ricevi tutte le notifiche tramite Telegram. <br/><br/> true: Abilita le notifiche su Telegram.<br/><br/> false: Non invia notifiche. <br/><br/> Quando viene trovata una chiave privata, invia una notifica a Telegram. Se imposti 'telegram_share_eachkey' su 'true', invierà una notifica ogni volta che un intervallo viene scansionato. Se le tue impostazioni di Telegram sono corrette, riceverai una notifica quando il lavoratore inizia a lavorare. Suggerimento: Se lavori su un computer non affidabile, effettua le impostazioni tramite console e continua senza salvarle.<br/><br/> IMPORTANTE: Se viene trovata una chiave e Telegram non riesce a inviarti la chiave, riproverà illimitatamente.<br/><br/>",
     "telegram-acces-token": "Inserisci il valore del token di accesso del bot Telegram. Esempio: 6331494066:ABEfv4cF3dbc3mA8qGLDlEp2uxzgYESIa_w<br/><br/>",
     "telegram-chat-id": "Inserisci il valore dell'ID chat di Telegram. Esempio: -9334716240<br/><br/>",
-    "telegram-share-each-key": "true (Sì): Invia una notifica per ogni chiave scansionata.<br/><br/> false (No): Invia una notifica solo quando viene trovata la chiave privata obiettivo.<br/><br/>"
+    "telegram-share-each-key": "true (Sì): Invia una notifica per ogni chiave scansionata.<br/><br/> false (No): Invia una notifica solo quando viene trovata la chiave privata obiettivo.<br/><br/>",
+    "wallet-address": "Non è possibile modificare questo valore. È l'indirizzo del portafoglio del tuo lavoratore. Deve essere inserito nell'apposito campo del file \"settings.txt\"."
   },
   "faq": {
     "meta-desc": "Le risposte alle domande più frequenti su BTC Puzzle, Bitcrackrandomiser e CloudSearch.",
@@ -967,5 +983,10 @@
     "answer45": "<p> Se hai deciso di utilizzare Cloud Search, la prima cosa da fare è creare un modello affidabile. Eseguire una scansione con le impostazioni predefinite rivelerà la chiave sul server in esecuzione, quindi è necessario impostare un meccanismo di condivisione. </p> <p> Nel tuo modello, utilizza sempre il valore \"untrusted_computer\" come \"true\". Questo impedirà che la chiave trovata venga salvata nella console dell'applicazione, nei log o in qualsiasi luogo del server in esecuzione. La chiave verrà trasmessa solo nel modo da te specificato. È obbligatorio utilizzare la funzionalità di condivisione API o di condivisione Telegram. </p> <p> Dopo aver creato il modello pertinente, ti verrà mostrato un avviso che indica quanto è affidabile il modello. </p>",
     "question46": "Posso utilizzare la mia immagine Docker?",
     "answer46": "<p> Su Cloud Search viene utilizzata solo \"l'immagine Docker originale\" per impostazione predefinita. Tuttavia, stiamo aggiornando questa funzionalità per permetterti di utilizzare la tua immagine Docker. </p>"
+  },
+  "backup": {
+    "desc": "Esegui il backup del tuo account utilizzando la frase di ripristino. \nNon offriamo servizi di recupero e ripristino della password.",
+    "success": "La frase di recupero è stata impostata.",
+    "title": "Frase di recupero"
   }
 }

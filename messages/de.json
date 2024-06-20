@@ -256,8 +256,17 @@
     "telegram-group-desc": "Für Unterstützung, Chat und mehr.",
     "telegram-group": "Telegram Gruppe",
     "general": {
-      "other": "Andere"
-    }
+      "other": "Andere",
+      "realtime-status": "Echtzeitstatus",
+      "workers": "Arbeitskräfte"
+    },
+    "ok": "OK",
+    "accept-cookie-text": "Diese Website verwendet Cookies, um die Benutzererfahrung zu verbessern. Durch die Nutzung unserer Website stimmen Sie allen Cookies zu.",
+    "back": "Zurück",
+    "backup-failed": "Beim Backup ist ein Problem aufgetreten. \nAchten Sie darauf, dass Sie die Wörter in der richtigen Reihenfolge auswählen.",
+    "backup-now": "Jetzt sichern",
+    "forgot-password": "Passwort vergessen?",
+    "select-word": "Wort auswählen"
   },
   "tools": {
     "title": "Krypto Werkzeuge",
@@ -385,7 +394,11 @@
     "register-password-length-error": "Das Passwort muss mindestens {min} Zeichen lang sein.",
     "register-password-unmatch-error": "Die eingegebenen Passwörter stimmen nicht überein.",
     "registarion-failed": "Registrierung fehlgeschlagen. Die eingegebene Wallet-Adresse ist ungültig oder wird bereits verwendet.",
-    "register-success": "Willkommen, {username} Ihre Registrierung war erfolgreich."
+    "register-success": "Willkommen, {username} Ihre Registrierung war erfolgreich.",
+    "account-recovery": "Konto-Wiederherstellung",
+    "invalid-recovery-phrase": "Es wurde eine ungültige Wiederherstellungsphrase eingegeben.",
+    "recover-my-account": "Mein Konto wiederherstellen",
+    "recovery-phrase": "Wiederherstellungssatz"
   },
   "gpus": {
     "title": "GPU-Benchmark für Bitcoin-Puzzle",
@@ -754,7 +767,7 @@
     "top-10-desc": "Diese Tabelle zeigt die Benutzer, die in den letzten 24 Stunden am meisten beigetragen haben.",
     "shows-data-last-hour": "Zeigt Daten der letzten Stunde an.",
     "last-update": "Letztes Update",
-    "data-updated-every-x": "Daten werden alle 5 Minuten aktualisiert.",
+    "data-updated-every-x": "Daten werden alle {x} Minuten aktualisiert.",
     "defeated-footer-desc": "Hinweis: <b>2000000-2050000</b> (Erste ~%0.98) und <b>3FAF000-3FFFFFF</b> (Letzte ~%0.98) Bereiche wurden im Puzzle {puzzle} Pool manuell übersprungen.",
     "deleted": "Vorlage mit dem Namen \"{template}\" wurde gelöscht.",
     "saved": "Vorlage erfolgreich gespeichert.",
@@ -848,7 +861,9 @@
     "eligable-status-description": "<li> Wenn Sie bereits kostenlos nutzen, können Sie dies weiterhin tun, solange Sie die oben genannten Bedingungen erfüllen. </li> <li> Wenn Sie keine der Bedingungen erfüllen, <u>müssen Sie eine Eintrittsgebühr zahlen</u>. </li> <li> Nachdem Sie die Eintrittsgebühr bezahlt haben, haben Sie <u>{day} Tage Zeit, um eine der oben genannten Bedingungen zu erfüllen</u>. Solange Sie eine der Bedingungen erfüllen, können Sie immer kostenlos nutzen. </li> <li> Um lebenslang kostenlos zu bleiben, müssen Sie <u>eine der Bedingungen erfüllen</u>. </li> <li> <u> Die Eintrittsgebühr wird steigen, wenn der allgemeine Scan-Prozentsatz im Pool steigt. </u> </li> <li> Die von Ihnen zu zahlende Gebühr gilt nur für den Puzzle {puzzle} Pool. </li>",
     "pay-entrance-fee": "EINTRITTSGEBÜHR BEZAHLEN",
     "group-workers": "Arbeiter gruppieren",
-    "no-active-workers": "Keine aktiven Arbeiter"
+    "no-active-workers": "Keine aktiven Arbeiter",
+    "wallet-address-for-app": "Wert der Wallet-Adresse für App.",
+    "backup-success": "Das Konto wurde erfolgreich gesichert."
   },
   "tooltip": {
     "user-token": "Wenn Sie den Benutzertoken erneuern, werden Ihre aktuellen Arbeiter offline sein. Sie müssen den neuen Token-Wert in der \"settings.txt\"-Datei jedes Arbeiters aktualisieren.",
@@ -870,7 +885,8 @@
     "telegram-share": "Erhalten Sie alle Benachrichtigungen über Telegram. <br/><br/> true: Aktivieren Sie das Senden von Benachrichtigungen an Telegram.<br/><br/> false: Sendet keine Benachrichtigungen. <br/><br/> Wenn ein privater Schlüssel gefunden wird, sendet die Anwendung eine Benachrichtigung an Telegram. Wenn Sie 'telegram_share_eachkey' auf 'true' setzen, sendet die Anwendung eine Benachrichtigung für jeden gescannten Bereich. Wenn Ihre Telegram-Einstellungen korrekt sind, erhalten Sie eine Benachrichtigung, wenn der Arbeiter zu arbeiten beginnt. Vorschlag: Wenn Sie sich auf einem nicht vertrauenswürdigen Computer befinden, führen Sie die Einstellungen über die Konsole aus und setzen Sie sie fort, ohne sie zu speichern.<br/><br/> WICHTIG: Wenn ein Schlüssel gefunden wird und Telegram den Schlüssel nicht senden kann, wird es unbegrenzt versuchen.<br/><br/>",
     "telegram-acces-token": "Geben Sie den Telegram BOT-Zugriffstoken-Wert ein. Beispiel: 6331494066:ABEfv4cF3dbc3mA8qGLDlEp2uxzgYESIa_w<br/><br/>",
     "telegram-chat-id": "Geben Sie die Telegram-Chat-ID ein. Beispiel: -9334716240<br/><br/>",
-    "telegram-share-each-key": "true (Ja): Sendet eine Benachrichtigung für jeden gescannten Schlüssel.<br/><br/> false (Nein): Sendet nur eine Benachrichtigung, wenn der Ziel-Privatschlüssel gefunden wird.<br/><br/>"
+    "telegram-share-each-key": "true (Ja): Sendet eine Benachrichtigung für jeden gescannten Schlüssel.<br/><br/> false (Nein): Sendet nur eine Benachrichtigung, wenn der Ziel-Privatschlüssel gefunden wird.<br/><br/>",
+    "wallet-address": "Sie können diesen Wert nicht ändern. Es handelt sich um die Wallet-Adresse Ihres Mitarbeiters. Es muss in das entsprechende Feld in der Datei „settings.txt“ eingetragen werden."
   },
   "faq": {
     "meta-desc": "Antworten auf häufig gestellte Fragen zu BTC Puzzle, Bitcrackrandomiser und CloudSearch.",
@@ -967,5 +983,10 @@
     "answer45": "<p> Wenn Sie sich entschieden haben, Cloud Search zu verwenden, sollten Sie zunächst eine zuverlässige Vorlage erstellen. Das Scannen mit den Standardeinstellungen führt dazu, dass der private Schlüssel auf dem laufenden Server offengelegt wird, daher müssen Sie einen Freigabemechanismus einrichten. </p> <p> Verwenden Sie in Ihrer Vorlage immer den Wert „untrusted_computer“ auf „true“. Dies verhindert, dass der gefundene private Schlüssel im Anwendungskonsole, in den Logs oder an einem anderen Ort auf dem laufenden Server gespeichert wird. Der private Schlüssel wird nur auf die von Ihnen angegebene Weise an Sie gesendet. Die Verwendung der API- oder Telegram-Teilen-Funktion ist obligatorisch. </p> <p> Nachdem die entsprechende Vorlage erstellt wurde, wird Ihnen eine Warnung angezeigt, wie zuverlässig die Vorlage ist. </p>",
     "question46": "Kann ich mein eigenes Docker-Image verwenden?",
     "answer46": "<p> In Cloud Search wird standardmäßig nur das „Original Docker Image“ verwendet. Wir werden bald die Möglichkeit hinzufügen, Ihre eigenen Docker-Images zu verwenden. </p>"
+  },
+  "backup": {
+    "desc": "Sichern Sie Ihr Konto mit der Wiederherstellungsphrase. \nWir bieten keine Dienste zur Passwortwiederherstellung und zum Zurücksetzen an.",
+    "success": "Wiederherstellungsphrase wurde festgelegt.",
+    "title": "Wiederherstellungssatz"
   }
 }
